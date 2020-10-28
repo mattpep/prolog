@@ -5,10 +5,10 @@ even(Current, Next) :-
 	0 =:= mod(Current,2), Next is Current / 2.
 
 step(Current, Next, ThisStep) :-
-	Current \= 1, odd(Current, Next), ThisStep = 'O'.
+	Current \= 1, odd(Current, Next), ThisStep = Current.
 
 step(Current, Next, ThisStep) :-
-	even(Current, Next), ThisStep = 'E'.
+	even(Current, Next), ThisStep = Current.
 
 steps(Start, End, [H|T]) :-
 	step(Start, Interim, H), steps(Interim, End, T).
