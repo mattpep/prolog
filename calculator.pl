@@ -1,3 +1,16 @@
+% This is some prolog code to solve puzzles in the Android app "Calculator: The
+% Game" and its many clones, such as the webapp https://calculator-game-reactjs.vercel.app/
+%
+% It is entirely unaffiliated with the Android app and derivatives.
+%
+% I've completed the Android version but decided to write this prolog code in
+% an attempt to improve my prolog knowledge.
+%
+% To spell it out: If you use this code to get past levels you are only doing
+% yourself a disservice.
+%
+% Code released without license – do what you want, I don't care.
+
 % insert plain digits
 digits_key(In, Digits, Out) :-
 	Digits < 10,
